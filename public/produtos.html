@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teste</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body style="margin: 25px;">
+
+  <h2>Cadastro de produtos</h2>
+
+  <form id="formulario-cadastro">
+    <label for="input-codigo">Código: </label>
+    <input type="text" id="input-codigo" placeholder="1234" required />
+
+    <label for="input-nome">Nome: </label>
+    <input type="text" id="input-nome" placeholder="Arroz" required />
+
+    <label for="input-preco">Preço: </label>
+    <input type="number" id="input-preco" placeholder="R$ 200,00" required />
+
+    <input type="checkbox" id="input-prime">
+    <label for="input-prime">É prime?</label>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+
+  <br><br>
+
+  <table>
+
+    <caption>
+      <h3>Lista de produtos</h3>
+    </caption>
+
+    <thead>
+      <tr>
+        <th>Identificador</th>
+        <th>Nome do produto</th>
+        <th>Preço do produto</th>
+        <th>Prime</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+
+    <tbody id="tbody"></tbody>
+
+  </table>
+  <script src="../dist/index.js"></script>
+</body>
+
+</html>
